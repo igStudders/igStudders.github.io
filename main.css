@@ -1,0 +1,599 @@
+html, body {
+  font-family: Inherit, Georgia;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 48px;
+  color: black
+}
+
+p {
+  max-width: 65%;
+  min-width: 2px;
+}
+
+h2 {
+  cursor: pointer;
+  font-size: 2.6rem;
+}
+
+div {
+  padding-right: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+video {
+  background-color: #000000;
+  border: 2px solid black;
+}
+
+.background {
+  background-image: 
+    url("http://www.thegazette.com/storyimage/GA/20170524/ARTICLE/170529755/AR/0/AR-170529755.jpg&MaxH=500&MaxW=648");
+  background-position: center top;
+  background-size: cover;
+}
+
+.background2 {
+  background-image: 
+    url("http://www.thegazette.com/storyimage/GA/20170524/ARTICLE/170529755/AR/0/AR-170529755.jpg&MaxH=500&MaxW=648");
+  background-size: 1350px 645px;
+  background-repeat: no-repeat;
+}
+
+.background3 {
+  background-image:
+    url("http://www.thegazette.com/storyimage/GA/20170524/ARTICLE/170529755/AR/0/AR-170529755.jpg&MaxH=500&MaxW=648");
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  padding-left: 2px;
+  min-width: 75%;
+  margin: 0;
+  text-align: center;
+  position: relative;
+  left: 150px;
+}
+
+.nav {
+  background-color: DeepSkyBlue;
+  max-width: 25%;
+  min-width: 140px;
+  flex: 1;
+  text-allign: center;
+  postion: relative;
+  top: -500px;
+}
+
+.nav h2 {
+  padding-left: 20px;
+  background-color: #BA55D3;
+  color: yellow;
+}
+
+.nav ul {
+  padding-left:20px;
+  color: #BA55D3;
+}
+
+.contact {
+  position: relative;
+  top: 550px;
+  left: 200px;
+  color: yellow;
+}
+
+.contact a {
+  cursor: pointer;
+  margin-right: 10px;
+  font: bold 20px georgia;
+  text-decoration: none;
+  background-color: Yellow;
+  color: red;
+  padding: 2px 6px 2px 6px;
+  border-top: 4px solid lightyellow3;
+  border-right: 4px solid #e6c300;
+  border-bottom: 4px solid #e6c300;
+  border-left: 4px solid lightyellow3;
+}
+
+.contact a:hover {
+  margin: 5px;
+}
+
+.contact: active {
+  position: relative;
+  top: 601px;
+}
+
+span {
+    padding: 10px;
+    margin:10px;
+    border:1px solid black;
+    color: black;
+    display:inline-block;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: yellow;
+    overflow: hidden;
+    text-align: center;
+    height: 43px;
+    text: black;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: red;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: red;
+    color: yellow;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Beginning of Sign Up */
+
+/* position of button */
+.signup {
+  position: relative;
+  top: -347px;
+  left: 600px;
+}
+
+/* The look of the background, text, and cursor of the attribute */
+.signup a {
+  cursor: pointer;
+  margin-right: 10px;
+  font: bold 20px cursive;
+  text-decoration: none;
+  background-color: red;
+  color: yellow;
+  padding: 2px 6px 2px 6px;
+  border-top: 2px solid #e60000;
+  border-right: 4px solid #e60000;
+  border-bottom: 4px solid #e60000;
+  border-left: 4px solid #e60000;
+}
+
+/* moves button when cursor runs over the attribute */
+.signup a:hover {
+  margin: 5px;
+}
+
+
+
+@import "compass/css3";
+
+$body-bg: #c1bdba;
+$form-bg: #13232f;
+$white: #ffffff;
+
+$main: #1ab188;
+$main-light: lighten($main,5%);
+$main-dark: darken($main,5%);
+
+$gray-light: #a0b3b0;
+$gray: #ddd;
+
+$thin: 300;
+$normal: 400;
+$bold: 600;
+$br: 4px;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll; 
+}
+
+body {
+  background:$body-bg;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+a {
+  text-decoration:none;
+  color:$main;
+  transition:.5s ease;
+  &:hover {
+    color:$main-dark;
+  }
+}
+
+.form {
+  background:rgba($form-bg,.9);
+  padding: 40px;
+  max-width:600px;
+  margin:40px auto;
+  border-radius:$br;
+  box-shadow:0 4px 10px 4px rgba($form-bg,.3);
+}
+
+.tab-group {
+  list-style:none;
+  padding:0;
+  margin:0 0 40px 0;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  position: relative;
+  top: -100px;
+  }
+
+  li a {
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    background:rgba($gray-light,.25);
+    color:$gray-light;
+    font-size:20px;
+    float:left;
+    width:50%;
+    text-align:center;
+    cursor:pointer;
+    transition:.5s ease;
+    &:hover {
+      background:$main-dark;
+      color:$white;
+    position: relative;
+    top: -100px;
+    }
+  }
+  .active a {
+    background:$main;
+    color:$white;
+  }
+}
+
+.tab-content {
+  display: block;
+}
+
+
+h2 {
+  text-align:center;
+  color:$white;
+  font-weight:$thin;
+  margin:0 0 40px;
+  position: relative;
+  top: -85px;
+}
+
+label {
+  position:absolute;
+  top: -15px;
+  transform:translateY(6px);
+  left:-200px;
+  color:rgba($white,.5);
+  transition:all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size:22px;
+  .req {
+  	margin:2px;
+  	color:$main;
+  }
+}
+
+label.active {
+  transform:translateY(50px);
+  left:2px;
+  font-size:14px;
+  .req {
+    opacity:0;
+  }
+}
+
+label.highlight {
+	color:$white;
+}
+
+input, textarea {
+  font-size:22px;
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px 10px;
+  background:none;
+  background-image:none;
+  border:1px solid $gray-light;
+  color:$white;
+  border-radius:0;
+  transition:border-color .25s ease, box-shadow .25s ease;
+  &:focus {
+		outline:0;
+		border-color:$main;
+  }
+}
+
+textarea {
+  border:2px solid $gray-light;
+  resize: vertical;
+}
+
+.field-wrap {
+  position:relative;
+  top: -100px;
+  margin-bottom:40px;
+}
+
+.top-row {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  position: relative;
+  top: -100px;
+  }
+
+  > div {
+    float:left;
+    width:48%;
+    margin-right:4%;
+    &:last-child { 
+      margin:0;
+    }
+  }
+}
+
+button {
+  border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:$bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background:$main;
+  color:$white;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+  &:hover, &:focus {
+    background:$main-dark;
+  }
+}
+
+.l-s {
+  display:block;
+  width:100%;
+  position: relative;
+  top: -100px;
+  cursor: pointer;
+border:0;
+  outline:none;
+  border-radius:0;
+  padding:15px 0;
+  font-size:2rem;
+  font-weight:$bold;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  background: lightgray;
+  color:$white;
+  transition:all.5s ease;
+  -webkit-appearance: none;
+  &:hover, &:focus {
+    background: gray;
+  }
+}
+
+.forgot {
+  margin-top:-20px;
+  text-align:right;
+}
+
+.login {
+  position: relative;
+  top: -340px;
+  left: 650px;
+}
+
+.about {
+  position: relative;
+  top: -30px;
+}
+
+/* position of button */
+.signup2 {
+  position: relative;
+  top: -653px;
+  left: 1200px;
+}
+
+/* The look of the background, text, and cursor of the attribute */
+.signup2 a {
+  cursor: pointer;
+  margin-right: 10px;
+  font: bold 20px cursive;
+  text-decoration: none;
+  background-color: red;
+  color: yellow;
+  padding: 2px 6px 2px 6px;
+  border-top: 2px solid #e60000;
+  border-right: 4px solid #e60000;
+  border-bottom: 4px solid #e60000;
+  border-left: 4px solid white;
+}
+
+/* moves button when cursor runs over the attribute */
+.signup2 a:hover {
+  margin: 5px;
+}
+
+
+/* position of button */
+.signup3 {
+  position: relative;
+  top: -37px;
+  left: 1200px;
+}
+
+/* The look of the background, text, and cursor of the attribute */
+.signup3 a {
+  cursor: pointer;
+  margin-right: 10px;
+  font: bold 20px cursive;
+  text-decoration: none;
+  background-color: red;
+  color: yellow;
+  padding: 2px 6px 2px 6px;
+  border-top: 2px solid #e60000;
+  border-right: 4px solid #e60000;
+  border-bottom: 4px solid #e60000;
+  border-left: 4px solid #e60000;
+}
+
+/* moves button when cursor runs over the attribute */
+.signup3 a:hover {
+  margin: 5px;
+}
+
+/* position of button */
+.signup4 {
+  position: relative;
+  top: -682px;
+  left: 1200px;
+}
+
+/* The look of the background, text, and cursor of the attribute */
+.signup4 a {
+  cursor: pointer;
+  margin-right: 10px;
+  font: bold 20px cursive;
+  text-decoration: none;
+  background-color: red;
+  color: yellow;
+  padding: 2px 6px 2px 6px;
+  border-top: 2px solid #e60000;
+  border-right: 4px solid #e60000;
+  border-bottom: 4px solid #e60000;
+  border-left: 4px solid #e60000;
+}
+
+/* moves button when cursor runs over the attribute */
+.signup4 a:hover {
+  margin: 5px;
+}
+
+/* position of button */
+.signup5 {
+  position: relative;
+  top: -36px;
+  left: 640px;
+}
+
+/* The look of the background, text, and cursor of the attribute */
+.signup5 a {
+  cursor: pointer;
+  margin-right: 10px;
+  font: bold 20px cursive;
+  text-decoration: none;
+  background-color: red;
+  color: yellow;
+  padding: 2px 6px 2px 6px;
+  border-top: 2px solid #e60000;
+  border-right: 4px solid #e60000;
+  border-bottom: 4px solid #e60000;
+  border-left: 4px solid #e60000;
+}
+
+/* moves button when cursor runs over the attribute */
+.signup5 a:hover {
+  margin: 5px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  position: relative;
+  top: 100px;
+  float: left;
+  width: 100%;
+  border: 3px solid #00B4CC;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;
+  top: 100px;  
+  right: -27px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Search4it {
+  position: relative;
+  top: 90px
+}
+
+.PaperList {
+  position: relative;
+  top: -440px;
+}
+
+.PaperList a {
+  cursor: pointer;
+  display: block;
+}
