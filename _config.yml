@@ -1,3 +1,8 @@
+<!DOCTYPE html>
+<html>
+<META http-equiv="refresh" content="5;URL=your_url"> 
+</html>
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -16,7 +21,7 @@
 title: HWS
 email: HWSCreator@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Do your homework for you!
+  This is an ordinary website!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: None
