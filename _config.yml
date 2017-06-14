@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html>
-<META http-equiv="refresh" content="5;URL=igstudders.github.io/Index.html"> 
-</html>
-
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -18,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: HWS
-email: HWSCreator@gmail.com
+title: Tips to getting to the real site are around this page!
+email: MedicalTermForPointerFinger.html
 description: > # this means to ignore newlines until "baseurl:"
   This is an ordinary website!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: None
+twitter_username: Remember to use CAPS
 github_username:  igStudders
 
 # Build settings
