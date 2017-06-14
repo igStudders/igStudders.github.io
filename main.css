@@ -539,7 +539,8 @@ body{
 
 .search {
   width: 100%;
-  position: relative
+  position: relative;
+  top: -500px;
 }
 
 .searchTerm {
