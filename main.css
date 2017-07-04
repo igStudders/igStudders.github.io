@@ -598,7 +598,8 @@ body{
   cursor: pointer;
   display: block;
   postion: relative;
-  margin: auto;
+  top: -600px;
+  left: 500px;
 }
 
 .DDoS {
