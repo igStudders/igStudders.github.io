@@ -591,14 +591,14 @@ body{
 
 .PaperList {
   position: relative;
-  top: -440px;
+  margin: auto;
 }
 
 .PaperList a {
   cursor: pointer;
   display: block;
   postion: relative;
-  top: -500px;	
+  margin: auto;
 }
 
 .DDoS {
